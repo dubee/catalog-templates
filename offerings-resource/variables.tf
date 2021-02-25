@@ -1,11 +1,3 @@
-variable "iam_token" {
-    description= "iam bearer token for ibm cloud account"
-    type = string
-}
-variable "iam_refresh_token" {
-    description= "iam refresh token for ibm cloud account"
-    type = string
-}
 variable "instance_label" {
     type = string
 }
