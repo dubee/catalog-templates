@@ -33,3 +33,22 @@ variable "cluster_all_namespaces" {
     description = "boolean for whether or not you would like to deploy into all namespaces"
     type = bool
 }
+variable "resource_group_id" {
+    description = "the id of the resource group you'd like your offering instance resource provisioned into"
+    type = string
+}
+variable "channel" {
+    description = "the channel to target with the subscription"
+    default = ""
+    type = string
+}
+variable "install_plan" {
+    description = "the install plan for the operator subscription, either manual or automatic"
+    default = "automatic"
+}
+variable "wait_until_successful" {
+   description = "whether to wait until state is successful"
+   default = true
+   type = bool
+}
+

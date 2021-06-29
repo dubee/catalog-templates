@@ -9,4 +9,7 @@ resource "ibm_cm_offering_instance" "cm_offering_instance_instance" {
    cluster_region = var.region
    cluster_namespaces = var.cluster_namespaces
    cluster_all_namespaces = var.cluster_all_namespaces
+   resource_group_id = var.resource_group_id
+   channel = var.channel
+   install_plan = var.install_plan
 }
