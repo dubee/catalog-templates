@@ -44,7 +44,7 @@ variable "channel" {
 }
 variable "install_plan" {
     description = "the install plan for the operator subscription, either manual or automatic"
-    default = "automatic"
+    type = string
 }
 variable "wait_until_successful" {
    description = "whether to wait until state is successful"
