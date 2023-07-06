@@ -32,3 +32,8 @@ variable "ssh_key_id" {
     description = "ID of SSH key to provision with"
     type = string
 }
+
+variable "resource_group" {
+    description = "Resource group to provision VSI with"
+    type = string
+}

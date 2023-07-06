@@ -16,6 +16,8 @@ resource "ibm_is_instance" "validation_instance" {
   zone = var.subnet_zone
   keys = [var.ssh_key_id]
 
+  resource_group = var.resource_group
+
   timeouts {
     create = "15m"
     update = "15m"
