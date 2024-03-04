@@ -1,7 +1,12 @@
 resource "ibm_is_instance" "validation_instance" {
+  provider = catalog
   name    = var.vsi_instance_name
-  image   = var.vsi_id
   profile = var.vpc_profile
+  
+  catalog_offering {
+    version_crn = var.version_crn
+    plan_crn = var.plan_crn
+  }
 
   primary_network_interface {
     subnet = var.subnet_id

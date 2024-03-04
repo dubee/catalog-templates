@@ -3,9 +3,15 @@ variable "vsi_instance_name" {
     type = string
 }
 
-variable "vsi_id" {
-    description = "ID of VSI to deploy"
+variable "version_crn" {
+    description = "CRN of the Catalog version to deploy"
     type = string
+}
+
+variable "plan_crn" {
+    description = "CRN of the Catalog plan to deploy"
+    type = string
+    default = ""
 }
 
 variable "vpc_profile" {
