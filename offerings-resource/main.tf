@@ -12,4 +12,5 @@ resource "ibm_cm_offering_instance" "cm_offering_instance_instance" {
    resource_group_id = var.resource_group_id
    channel = var.channel
    install_plan = var.install_plan
+   plan_id = var.plan_id
 }

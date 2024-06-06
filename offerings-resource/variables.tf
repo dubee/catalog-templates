@@ -51,4 +51,8 @@ variable "wait_until_successful" {
    default = true
    type = bool
 }
-
+variable "plan_id" {
+    description = "ID of the software plan you would like to use for this deployment"
+    type = string
+    default = ""
+}
